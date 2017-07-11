@@ -204,7 +204,6 @@ module.exports = function () {
 
 ```
 const Koa = require('koa');
-const convert = require('koa-convert');
 const loggerAsync = require('./middleware/logger-async');
 const app = new Koa();
 
