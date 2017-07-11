@@ -1,0 +1,11 @@
+{
+  "name": "request-test",
+  "private": true,
+  "scripts": {
+    "start": "node get.js"
+  },
+  "dependencies": {
+    "koa": "^2.3.0",
+    "koa-bodyparser": "^4.2.0"
+  }
+}
