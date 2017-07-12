@@ -4,7 +4,7 @@ const url = require('url');
 const walk = require('./walk');
 
 /**
- *
+ * 封裝目錄內容
  * @param {string} url 當前請求的上下文中的url，即ctx.url
  * @param {string} reqPath 請求靜態資源的完整本地路徑
  * @return {string} 返回目錄內容，封裝成HTML
