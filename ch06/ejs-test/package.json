@@ -1,0 +1,12 @@
+{
+  "name": "ejs-test",
+  "private": true,
+  "scripts": {
+    "start": "node index.js"
+  },
+  "dependencies": {
+    "ejs": "^2.5.6",
+    "koa": "^2.3.0",
+    "koa-views": "^6.0.2"
+  }
+}
