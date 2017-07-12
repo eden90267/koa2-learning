@@ -1,0 +1,12 @@
+{
+  "name": "session-test",
+  "private": true,
+  "scripts": {
+    "start": "node index.js"
+  },
+  "dependencies": {
+    "koa": "^2.3.0",
+    "koa-mysql-session": "0.0.2",
+    "koa-session-minimal": "^3.0.4"
+  }
+}
