@@ -1,0 +1,11 @@
+{
+  "name": "busboy-test",
+  "private": true,
+  "scripts": {
+    "start": "node index.js"
+  },
+  "dependencies": {
+    "busboy": "^0.2.14",
+    "koa": "^2.3.0"
+  }
+}
