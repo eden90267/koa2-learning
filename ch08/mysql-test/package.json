@@ -1,0 +1,10 @@
+{
+  "name": "mysql-test",
+  "private": true,
+  "scripts": {
+    "start": "node index.js"
+  },
+  "dependencies": {
+    "mysql": "^2.13.0"
+  }
+}
