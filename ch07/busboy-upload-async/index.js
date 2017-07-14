@@ -30,11 +30,10 @@ app.use(async (ctx) => {
         });
     } else if (ctx.url === '/api/picture/upload.json' && ctx.method === 'POST') {
         // 上傳文件請求處理
-        let result = {success: false};
         let serverFilePath = path.join(__dirname, 'static/image');
 
         // 上傳文件事件
-        result = await uploadFile(ctx, {
+        let result = await uploadFile(ctx, {
             fileType: 'album',
             path: serverFilePath
         });
