@@ -39,7 +39,7 @@ console.log('[demo] start-quick is starting at port 3000');
 由於koa2是基於async/await操作中間件，目前node.js 7.x的harmony模式下才能使用，所以啟動時的腳本如下
 
 ```
-node index.js
+node upload.js
 ```
 
 ## async/await使用

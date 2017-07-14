@@ -49,7 +49,7 @@ console.log('[demo] cookie is starting at port 3000.');
 #### 執行腳本
 
 ```
-node index.js
+node upload.js
 ```
 
 #### 運行結果
@@ -143,7 +143,7 @@ console.log('[demo] session is starting at port 3000');
 #### 運行例子
 
 ```
-node index.js
+node upload.js
 ```
 
 查看資料庫session是否存儲

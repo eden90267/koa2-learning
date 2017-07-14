@@ -1,0 +1,14 @@
+{
+  "name": "busboy-upload-async",
+  "private": true,
+  "scripts": {
+    "start": "node index.js"
+  },
+  "dependencies": {
+    "busboy": "^0.2.14",
+    "ejs": "^2.5.6",
+    "koa": "^2.3.0",
+    "koa-static": "^4.0.1",
+    "koa-views": "^6.0.2"
+  }
+}

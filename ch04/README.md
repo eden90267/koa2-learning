@@ -26,12 +26,12 @@
 │   ├── file.js # 讀取文件內容
 │   ├── mimes.js # 文件類型列表
 │   └── walk.js # 遍歷目錄內容
-└── index.js # 啟動入口文件
+└── upload.js # 啟動入口文件
 ```
 
 #### 代碼解析
 
-*index.js*：
+*upload.js*：
 
 ```
 const Koa = require('koa');
@@ -250,7 +250,7 @@ module.exports = mimes;
 #### 啟動服務
 
 ```
-node index.js
+node upload.js
 ```
 
 #### 效果

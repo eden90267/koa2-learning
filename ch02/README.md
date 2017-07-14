@@ -23,7 +23,7 @@ app.listen(3000);
 
 ```
 .
-├── index.js
+├── upload.js
 ├── package.json
 └── view
     ├── 404.html
@@ -97,7 +97,7 @@ console.log('[demo] route-simple is starting at port 3000');
 執行運行腳本：
 
 ```
-node index.js
+node upload.js
 ```
 
 ## koa-router中間件

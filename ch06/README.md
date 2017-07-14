@@ -16,12 +16,12 @@ npm i koa-views ejs --save
 
 ```
 ├── package.json
-├── index.js
+├── upload.js
 └── view
     └── index.ejs
 ```
 
-*index.js*：
+*upload.js*：
 
 ```
 const Koa = require('koa');
