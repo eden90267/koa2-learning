@@ -6,7 +6,7 @@
 
 #### 安裝
 
-```
+```sh
 npm i busboy --save
 ```
 
@@ -16,7 +16,7 @@ busboy模組是用來解析POST請求，node原生req中的文件流。
 
 #### 開始使用
 
-```
+```js
 const inspect = require('util').inspect;
 const path = require('path');
 const fs = require('fs');
@@ -256,6 +256,6 @@ node index.js
 
 *index.js*：
 
-```
+```js
 
 ```
