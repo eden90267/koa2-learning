@@ -1,0 +1,6 @@
+{
+  "name": "jsonp-test",
+  "dependencies": {
+    "koa": "^2.3.0"
+  }
+}

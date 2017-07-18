@@ -1,0 +1,7 @@
+{
+  "name": "jsonp-use-middleware",
+  "dependencies": {
+    "koa": "^2.3.0",
+    "koa-jsonp": "^2.0.2"
+  }
+}
