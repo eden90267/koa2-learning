@@ -1,0 +1,8 @@
+{
+  "name": "demo",
+  "private": true,
+  "dependencies": {
+    "koa": "^2.3.0",
+    "mysql": "^2.13.0"
+  }
+}
