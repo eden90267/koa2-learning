@@ -1,0 +1,10 @@
+{
+  "name": "debug-test",
+  "private": true,
+  "scripts": {
+    "start": "node index.js"
+  },
+  "dependencies": {
+    "koa": "^2.3.0"
+  }
+}
