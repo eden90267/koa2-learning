@@ -43,7 +43,10 @@ module.exports = {
 
   },
 
-
+  /**
+   * 註冊操作
+   * @param {object} ctx 上下文對象
+   */
   async signUp(ctx) {
     let formData = ctx.request.body;
     let result = {
@@ -72,7 +75,7 @@ module.exports = {
       if (existOne.email === formData.email) {
         result.message = userCode.FAIL_EMAIL_IS_EXIST
         ctx.body = result;
-        return
+        return;
       }
     }
 
@@ -86,8 +89,64 @@ module.exports = {
 
     console.log(userResult);
 
-    // todo ...
+    if (userResult && userResult.insertId * 1 > 0) {
+      result.success = true;
+    } else {
+      result.message = userCode.ERROR_SYS;
+    }
 
+    ctx.body = result;
+  },
+
+  /**
+   * 獲取用戶信息
+   * @param {object} ctx 上下文對象
+   */
+  async getLoginUserInfo(ctx) {
+    let session = ctx.session;
+    let isLogin = session.isLogin;
+    let userName = session.userName;
+
+    console.log(`session= ${session}`);
+
+    let result = {
+      success: false,
+      message: '',
+      data: null
+    };
+    if (isLogin === true && userName) {
+      let userInfo = await userInfoService.getUserInfoByUserName(userName);
+      if (userInfo) {
+        result.data = userInfo;
+        result.success = true;
+      } else {
+        result.message = userCode.FAIL_USER_NO_LOGIN;
+      }
+    } else {
+      // TODO
+    }
+
+    ctx.body = result;
+  },
+
+  /**
+   * 校驗用戶是否登陸
+   * @param {object} ctx 上下文對象
+   */
+  validateLogin(ctx) {
+    let result = {
+      success: false,
+      message: userCode.FAIL_USER_NO_LOGIN,
+      data: null,
+      code: 'FAIL_USER_NO_LOGIN'
+    };
+    let session = ctx.session;
+    if (session && session.isLogin === true) {
+      result.success = true;
+      result.message = '';
+      result.code = '';
+    }
+    return result;
   }
 
 };
