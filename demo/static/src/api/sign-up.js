@@ -44,3 +44,5 @@ const signUpApi = async (userInfo) => {
 
   return result;
 };
+
+export {signUpApi};

@@ -4,18 +4,19 @@ const path = require('path');
 const sourcePath = path.join(__dirname, '../src');
 const outputPath = path.join(__dirname, './../output/dist/');
 
+
 module.exports = {
   // 入口文件
   entry: {
-    'admin': '../src/pages/admin.js',
-    'work': '../src/pages/work.js',
-    'index': '../src/pages/index.js',
-    'error': '../src/pages/error.js',
+    'admin': './static/src/pages/admin.js',
+    'work': './static/src/pages/work.js',
+    'index': './static/src/pages/index.js',
+    'error': './static/src/pages/error.js',
     vendor: ['react', 'react-dom', 'whatwg-fetch'],
   },
   output: {
     path: outputPath,
-    publicPath: './../output/dist',
+    publicPath: '/static/output/dist',
     filename: 'js/[name].js'
   },
   module: {

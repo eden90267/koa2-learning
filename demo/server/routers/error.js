@@ -3,7 +3,7 @@
  * @type {Router}
  */
 
-const router = require('koa-router');
+const router = require('koa-router')();
 
 module.exports = router.get('*', async (ctx) => {
   const title = 'error';

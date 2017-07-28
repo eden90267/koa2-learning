@@ -27,7 +27,7 @@ app.use(session({
 }));
 
 // 配置控制台日誌中間件
-app.use(convert(koaLogger()));
+app.use(koaLogger());
 
 // 配置ctx.body解析中間件
 app.use(bodyParser());

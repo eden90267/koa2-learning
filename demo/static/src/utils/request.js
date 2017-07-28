@@ -114,7 +114,7 @@ const request = {
       let _input = document.createElement('input');
       _input.type = 'hidden';
       _input.name = key;
-      let _value = data[key];
+      let _value = _data[key];
       if (typeof _value === 'object') {
         _value = JSON.stringify(_value);
       }
@@ -122,6 +122,7 @@ const request = {
       _form.appendChild(_input);
     }
     document.body.appendChild(_form);
+    console.log(_form);
     _form.submit();
   }
 
